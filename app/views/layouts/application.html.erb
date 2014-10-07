@@ -6,13 +6,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-	<div class="container"><font color="red">
+<body><font color="red">
+	<div class="container">
 		<ul class="nav nav-tabs">
 			<li><%= link_to "Blocitoff", root_path %></li>
-			<li><%= link_to "About", about_path %></li>
 
-			<div class="pull-right user-info"><font color="red">
+			<div class="pull-right user-info">
 	           <% if current_user %>
 	             Hello <%= current_user.email %>! <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 	           <% else %>
