@@ -1,0 +1,18 @@
+<h1>Tasks</h1>
+
+
+<div class="row">
+	<div class="col-md-8">
+		<% @task.each do |task| %>
+		<div class="media">
+			<div class="media-body">
+				<h4 class="media-heading">
+				
+				</h4>
+				<small>
+					<%= task.description %>
+				</small>
+			</div>
+		</div>
+		<% end %>
+	</div>
