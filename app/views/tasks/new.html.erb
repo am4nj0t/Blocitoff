@@ -1,2 +1,10 @@
-<h1>Tasks#new</h1>
-<p>Find me in app/views/tasks/new.html.erb</p>
+<center><h1> Create new Task List </h1>
+<%= form_for(@task) do |f| %>
+ <div>
+ <%= f.label :description %>
+ <%= f.text_field :description %>
+</div>
+ <%= f.submit %>
+ <% end %>
+
+
