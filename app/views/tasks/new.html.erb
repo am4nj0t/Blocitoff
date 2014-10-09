@@ -1,0 +1,10 @@
+<center><h1> Create new Task List </h1>
+<%= form_for(@task) do |f| %>
+ <div>
+ <%= f.label :description %>
+ <%= f.text_field :description %>
+</div>
+ <%= f.submit %>
+ <% end %>
+
+

@@ -1,0 +1,15 @@
+<h1><%= @task.description %></h1>
+<%= form_for([@task,@item]) do |f| %>
+ <div>
+ <%= f.label :description %>
+ <%= f.text_field :description %>
+</div>
+<%= f.submit "Create item" %>
+<% end %>
+
+#test out actually creating an item - make sure to check your db to ensure all fields are illed in as expected
+#add a loop in our task/show - that displays all the items
+#generate a migration to add the completed column to items
+#generate a migration to add the complete column to tasks
+#add completed column to both task/index page and task/show page
+
